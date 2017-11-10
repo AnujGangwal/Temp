@@ -1,0 +1,144 @@
+
+  <app-header></app-header>
+    
+    <header class="hero">
+        
+        <div class="col-lg-12 col-md-12" >
+              <h1 align="center" style="font-weight: 800;">TACOS CARDIGON</h1>
+              <h1 align="center" style="font-weight: 800;">TRUFFAUT QUANTED!</h1>
+              <div class="col-lg-4 col-md-4">
+                 <img src="UX/image/Minion.png" width="200" height="100">
+              </div>
+               <div class="col-lg-4 col-md-4">
+                  
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <img src="UX/image/tomato.png" width="200" height="100">                
+              </div>
+             
+
+        </div>
+          <div align="center">
+      <a href="#section2" du-smooth-scroll du-scrollspy><img src="UX/image/scroll.png" style="width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-animation: bounce 1.7s ease-in-out infinite;
+    -moz-animation: bounce 1.7s ease-in-out infinite;
+    -ms-animation: bounce 1.7s ease-in-out infinite;
+    -o-animation: bounce 1.7s ease-in-out infinite;
+    animation: bounce 1.7s infinite;"></a>
+    </div>
+    </header>
+  
+
+    <div class="container" id="section2">
+        <section >
+            <div class="col-lg-12 col-md-12">
+                <div class="col-lg-6 col-md-6">
+                  <h1 style="font-weight: 800;">WHAT I DO</h1>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <p style="line-height: 1.8;font-size: 1rem; color: #555;">{{login.topData}}</p>
+                </div>
+            </div>
+            {{login.midDiv}}
+            <row>
+            <div class="col-lg-4 col-md-4 centered top" ng-repeat="midDiv in login.data">
+                <img alt="Triple-Scoop Ice-Cream Sundae"
+                    src="{{midDiv.imgUrl}}" width="236" />
+                <h3 class="subtitle">{{midDiv.title}}</h3>
+                <p class="subtitle">{{midDiv.subTitle}}</p>
+            </div>
+        </section>
+        <section>
+            <div class="col-lg-12 col-md-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <h1 align="center" style="font-weight: 800;">MY WORKS</h1>
+                </div>
+                <div class="col-lg-12 col-md-12" style="padding: 0;">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0;">
+                    <img src="UX/image/book.jpg" width="200" height="100" style="width: fit-content;"> 
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0;">
+                    <img src="UX/image/book.jpg" width="200" height="100" style="width: fit-content;"> 
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0;">
+                    <img src="UX/image/book.jpg" width="200" height="100" style="width: fit-content;"> 
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" style="padding: 0;">
+                    <img src="UX/image/book.jpg" width="200" height="100" style="width: fit-content;"> 
+                  </div>
+                </div>
+                
+            </div>
+           
+        </section>
+        <section>
+           <div class="col-lg-12 col-md-12">
+                <div class="col-lg-6 col-md-6">
+                  <h1 style="font-weight: 800;">ABOUT ME</h1>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <p style="line-height: 1.8;font-size: 1rem; color: #555;">{{login.topData}}</p>
+                </div>
+            </div>
+        </section>
+        <section></section>
+    </div>
+
+  <!--   <div class="grey">
+ 
+   
+        <div class="container">
+            <div class="col-12">
+                <h2 class="title">We're happy to answer any questions you may
+                    have!</h2>
+            </div>
+
+            <div class="col-lg-12 col-md-12">
+			
+
+                    <div class="panel-group page_view_margin_top" id="trn-accordion">
+               
+                <div class="panel panel-default" ng-repeat="flexi in login.groups" style="min-height: 70px;">
+                
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                             <a data-toggle="collapse" class="collapsed jewelleryAccordion" data-parent="#trn-accordion" data-target="#trn-{{flexi.id}}" aria-expanded="false" style="margin-top: 2%">
+                           {{flexi.title}}
+                             </a>
+                           </h4>
+                    </div>
+                    <div id="trn-{{flexi.id}}" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="panel-body" style="font-size: 1.02rem;line-height: 1.82rem;color: #777;">
+                           {{flexi.value}}
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            </div>
+
+        </div>
+    </div> -->
+<div class="container-fluid">
+        <footer-page></footer-page>
+    </div>
+
+<!-- <div class="row">
+    <div class="col-md-12 top-heading"><h1>Welcome</h1></div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="loginHead head-log">Login using your credentials
+    </h3>
+    <button ng-click="login.goToHome()">go to home</button>
+
+     <button ng-click="login.popUp()">PopUp</button>
+    </div>
+</div> -->
